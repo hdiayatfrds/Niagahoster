@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.2
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 17 Bulan Mei 2020 pada 13.37
--- Versi server: 10.4.11-MariaDB
--- Versi PHP: 7.2.26
+-- Generation Time: Apr 30, 2022 at 02:22 PM
+-- Server version: 10.4.18-MariaDB
+-- PHP Version: 8.0.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -25,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `anggota`
+-- Table structure for table `anggota`
 --
 
 CREATE TABLE `anggota` (
@@ -38,31 +37,32 @@ CREATE TABLE `anggota` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `anggota`
+-- Dumping data for table `anggota`
 --
 
 INSERT INTO `anggota` (`id_anggota`, `username`, `nama`, `alamat`, `email`, `no_hp`) VALUES
-(2, 'dimas12', 'Setiawan Dimas Arimurti', 'Desa kritig RT/RW 001/005 Petanahan', 'dimas@gmail.com', '08283737378');
+(2, 'dimas12', 'Setiawan Dimas Arimurti', 'Desa kritig RT/RW 001/005 Petanahan', 'dimas@gmail.com', '08283737378'),
+(3, 'Dayat', 'Hidayat Firdaus', 'jln pisang agung', 'kitabisakarenausaha@gmail.com', '086432596');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `anggota`
+-- Indexes for table `anggota`
 --
 ALTER TABLE `anggota`
   ADD PRIMARY KEY (`id_anggota`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `anggota`
+-- AUTO_INCREMENT for table `anggota`
 --
 ALTER TABLE `anggota`
-  MODIFY `id_anggota` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_anggota` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
